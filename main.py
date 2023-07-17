@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Main cli or app entry point
 """
@@ -10,6 +12,11 @@ import click
 @click.argument("a", type=int)
 @click.argument("b", type=int)
 def add_cli(a, b):
+
+    """
+    Hello this is a help screen, this calculates.
+    """
+
     click.echo(add(a, b))
 
 
